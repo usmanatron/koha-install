@@ -13,7 +13,7 @@ sudo echo 'deb http://debian.koha-community.org/koha stable main' | sudo tee /et
 sudo apt-get update
 
 # Install koha-common
-sudo apt-get install koha-common
+sudo apt-get -y install koha-common
 
 echo "=== Koha is now installed ==="
 echo ""
