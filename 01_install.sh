@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Pre-requisites
-apt-get update
-apt-get -y install sudo wget gnupg
+sudo apt-get update
+sudo apt-get -y install sudo wget gnupg
 
 # Koha GPG Key
 wget -q -O- https://debian.koha-community.org/koha/gpg.asc | sudo apt-key add -
@@ -20,4 +20,3 @@ echo ""
 echo "Now do the following manual tasks:"
 echo "* Install a DB server"
 echo "* Edit /etc/koha/koha-sites.conf with your config"
-echo "* Ensure Koha can access your DB.  Have a look at /etc/mysql/koha-common.cnf"

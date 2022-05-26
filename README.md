@@ -31,6 +31,7 @@ Run the first script!  Each one tells you what you have to do before running the
 
 * You're using the latest Debian
 * This won't install a database for you. That said there's an example Dockerised MariaDB in the `database` folder.
+* The database lives on the same machine.  IF it doesn't, you'll need to look at `/etc/mysql/koha-common.cnf` and edit appropriately before configuring.
 
 ## License
 
